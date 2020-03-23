@@ -1,0 +1,21 @@
+<application>
+  <component name="ProjectManager">
+    <defaultProject>
+      <component name="Git.Settings">
+        <option name="ROOT_SYNC" value="DONT_SYNC" />
+      </component>
+      <component name="GradleLocalSettings">
+        <option name="projectSyncType">
+          <map>
+            <entry key="$USER_HOME$/AndroidStudioProjects/gitcheck" value="PREVIEW" />
+          </map>
+        </option>
+      </component>
+      <component name="PropertiesComponent">
+        <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
+        <property name="last_opened_file_path" value="$USER_HOME$/AndroidStudioProjects/gitcheck" />
+        <property name="settings.editor.selected.configurable" value="vcs.Git" />
+      </component>
+    </defaultProject>
+  </component>
+</application>
