@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://www.gstatic.com/firebasejs/7.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.10.0/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.10.0/firebase-analytics.js"></script>
+    <script src="form.js"></script>
+
+  </head>
+<body>
+<div class="login-box">
+  <h1>Login</h1>
+  <div class="textbox">
+    <input type="text" placeholder="Email/Username" id="email">
+  </div>
+
+  <div class="textbox">
+    <input type="password" placeholder="Password" id="password">
+  </div>
+
+  <button onclick="signin()" id="signin">signin</button>
+  <button onclick="signuppage()" id="signuppage">New user?Signup here</button>
+</div>
+  </body>
+</html>

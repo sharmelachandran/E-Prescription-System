@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://www.gstatic.com/firebasejs/7.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.10.0/firebase.js"></script>
+
+
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.10.0/firebase-analytics.js"></script>
+<script src="form.js"></script>
+
+  </head>
+  <body>
+
+
+<div class="login-box">
+  <h1>REGISTER</h1>
+  
+  <div class="textbox">
+    <input type="text" placeholder="Enter Pharmacy Name" id="name" size="20" required>
+	</div>
+
+
+
+  <div class="textbox">
+    <input type="text" placeholder="Enter Email" id="email" required>
+  </div>
+
+  <div class="textbox">
+    <input type="password" placeholder="Enter Password" id="password" required>
+  </div>
+  <div class="textbox">
+    <input type="tel" placeholder="Enter phone number" id="phone" required>
+  </div>
+  
+  
+<div class="address">
+    <textarea rows="4" cols="36" placeholder="Enter Address......." id="address"></textarea>
+</div>
+   <div class="btn">
+    <button onclick="signup()" id="signup">signup</button>
+  </div>
+    <button onclick="loginpage()" id="loginpage">Already have an account?Login here</button>
+  
+
+  </div>
+  </body>
+</html>
+ 

@@ -1,0 +1,77 @@
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+  
+    <script src="https://www.gstatic.com/firebasejs/7.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.10.0/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.10.0/firebase-analytics.js"></script>
+    <script src="form.js"></script>
+
+</head>
+<body>
+    <div class="mainbox" onmouseover="show()" >
+   <label> Medicine Name:</label><input type="text" id="med" required/>
+   <label> Stock(in/out):</label><input type="text" id="stock" required/>
+    <button onclick="update()">ADD/UPDATE</button>
+    
+
+<table id='pharmacy' border="1">
+    <th>Medicines</td>
+    <th>Stock</td>
+</table>
+
+
+<script>
+   function update() {
+       //show();
+       var med=document.getElementById("med").value;
+        var cap=med.toLowerCase();
+        var stock=document.getElementById("stock").value;
+            if(med!=""&&stock!="")
+            {
+             var res =firebase.database().ref("pharmacy").child(firebase.auth().currentUser.uid).child("Medicine Names").child(med).set({
+                 stockstatus:stock, });
+            var res1 =firebase.database().ref("Medicines").child(med).set({
+                    caps:cap,});
+                   show();
+             result.catch(function(error)
+             {
+                 var errorcode=error.code;
+                var errorMessage=error.message;
+                 console.log(errorcode);
+                onsole.log(errorMessage);
+                 window.alert("Message :"+errorMessage);
+            });
+        }
+
+}
+
+function show() {
+    var res =firebase.database().ref("pharmacy").child(firebase.auth().currentUser.uid).child("Medicine Names");
+        var table=document.getElementsByTagName("table")[0];
+         var rowCount = table.rows.length;
+            if(rowCount>1)
+            {
+            for(var x=1;x<rowCount;x++)
+                table.deleteRow(1);
+            }
+    res.on('value', snapshot => {
+      snapshot.forEach(function(childSnapshot) {
+    var childKey = childSnapshot.key;
+    var childData = childSnapshot.child("stockstatus").val();
+    var table=document.getElementsByTagName("table")[0];
+    var newrow=table.insertRow(1);
+    var cell1=newrow.insertCell(0);
+    var cell2=newrow.insertCell(1);
+    cell1.innerHTML=childKey;
+    cell2.innerHTML=childData;
+     });
+        });
+    
+
+}
+</script>
+</div>
+</body>
+</html>
