@@ -26,6 +26,10 @@
           <option name="url" value="https://github.com/moisoni97/services.backgroud_music.git" />
           <option name="userName" value="" />
         </UrlAndUserName>
+        <UrlAndUserName>
+          <option name="url" value="https://github.com/sromku/memory-game.git" />
+          <option name="userName" value="" />
+        </UrlAndUserName>
       </list>
     </option>
     <option name="cloneParentDir" value="C:\Users\sharm\AndroidStudioProjects" />
