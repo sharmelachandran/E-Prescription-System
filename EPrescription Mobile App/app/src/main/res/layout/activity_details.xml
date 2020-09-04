@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".details"
+    android:scrollbars="vertical"
+    android:background="@drawable/backgroundcolor">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar">
+    </include>
+
+
+    <TextView
+        android:layout_below="@+id/doctor"
+        android:id="@+id/phar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="@string/pharmacy"
+       />
+    <TextView
+        android:layout_below="@+id/toolbar"
+        android:id="@+id/date"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/patient"
+        android:textAlignment="center"
+        android:textStyle="italic"
+        />
+
+
+    <TextView
+        android:layout_below="@+id/date"
+        android:id="@+id/patient"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/patient"
+       />
+
+    <TextView
+        android:layout_below="@+id/med"
+        android:id="@+id/doctor"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/doctor"
+        android:textStyle="italic|bold"
+        />
+    <RelativeLayout
+    android:id="@+id/btnlayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    >
+    <Button
+        android:layout_alignParentLeft="true"
+        android:id="@+id/mail"
+        android:layout_marginLeft="50dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_button"
+        android:text="@string/sendmail"
+        android:textColor="@color/btntext"
+        android:padding="5dp"
+        android:elevation="5dp"
+        />
+
+    <Button
+        android:id="@+id/save"
+        android:layout_alignParentEnd="true"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_button"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/save"
+        android:padding="5dp"
+        android:textColor="@color/btntext"
+        android:elevation="5dp"
+        />
+
+
+</RelativeLayout>
+    <TextView
+        android:layout_below="@+id/patient"
+        android:id="@+id/sym"
+
+        android:layout_margin="10dp"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/sym"
+        android:textSize="14sp"
+        />
+
+
+    <TextView
+        android:layout_below="@+id/sym"
+        android:id="@+id/med"
+
+        android:textStyle="bold"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/medicines"
+        android:textSize="14sp"
+        />
+
+
+</RelativeLayout>

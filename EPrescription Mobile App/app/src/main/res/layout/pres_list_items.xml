@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="104dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/fn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="68dp"
+            android:layout_marginEnd="226dp"
+            android:layout_marginBottom="21dp"
+            android:text="@string/fn" />
+
+        <Button
+            android:id="@+id/an"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="177dp"
+            android:layout_marginEnd="116dp"
+            android:layout_marginBottom="21dp"
+            android:text="@string/an" />
+
+        <Button
+            android:id="@+id/ni8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="281dp"
+            android:layout_marginEnd="13dp"
+            android:layout_marginBottom="21dp"
+            android:text="@string/night" />
+
+        <TextView
+            android:id="@+id/full_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/full_name_goes_here"
+            android:textColor="#212121"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/days"
+            android:layout_width="57dp"
+            android:layout_height="49dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="323dp"
+            android:layout_marginBottom="18dp"
+            android:ems="10"
+            android:hint="@string/no_fo_days"
+            android:inputType="number"
+            android:textSize="10sp"
+            android:importantForAutofill="no" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

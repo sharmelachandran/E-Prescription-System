@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".home"
+    android:background="@drawable/backgroundcolor">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar">
+    </include>
+
+    <EditText
+        android:background="@drawable/round"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/search"
+        android:layout_toLeftOf="@+id/imageButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxHeight="200dp"
+        android:ems="10"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:hint="@string/search_here"
+        android:importantForAutofill="no"
+        android:inputType="textMultiLine"
+
+      />
+
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/round1"
+        android:contentDescription="@string/voicesearch"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:src="@drawable/ic_mic_black_24dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+
+        android:layout_above="@+id/search"
+        android:id="@+id/review"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxHeight="150dp"
+        android:layout_margin="10dp"/>
+
+
+    <ListView
+
+        android:layout_above="@+id/check"
+        android:id="@+id/medls"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:scrollbarTrackVertical="@color/pink"
+        android:verticalScrollbarPosition="right"
+       />
+
+
+
+    <Button
+        android:layout_alignParentEnd="true"
+        android:id="@+id/check"
+        android:background="@drawable/rounded_button"
+        android:layout_margin="2.5dp"
+        android:layout_above="@+id/review"
+        android:padding="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:isScrollContainer="false"
+        android:text="@string/check_stock"
+        android:textColor="@color/btntext"
+        />
+    <RadioGroup
+        android:layout_below="@+id/medls"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        android:id="@+id/radioGroup">
+
+        <RadioButton
+        android:id="@+id/radio_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:layout_margin="5dp"
+        android:onClick="checkButton"
+        android:text="Symptoms" />
+
+        <RadioButton
+            android:id="@+id/radio_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:onClick="checkButton"
+            android:text="Medicines" />
+
+
+    </RadioGroup>
+
+
+</RelativeLayout>

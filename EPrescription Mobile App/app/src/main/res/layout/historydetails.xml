@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/right"
+    android:layout_margin="5dp"
+    android:orientation="vertical"
+    android:elevation="5dp"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/doctor"
+        android:padding="8dp"
+        android:textColor="@color/btntext"
+        >
+    </TextView>
+    <TextView
+        android:layout_below="@+id/doctor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:id="@+id/medicines"
+        android:textColor="@color/btntext"
+        >
+    </TextView>
+    <TextView
+        android:layout_below="@+id/medicines"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:id="@+id/symptoms"
+        android:textColor="@color/btntext"
+        >
+    </TextView>
+    <TextView
+        android:layout_below="@+id/symptoms"
+        android:layout_alignParentEnd="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:id="@+id/date"
+        android:textColor="@color/btntext"
+        android:textSize="8dp"
+        >
+    </TextView>
+
+
+
+</RelativeLayout>
