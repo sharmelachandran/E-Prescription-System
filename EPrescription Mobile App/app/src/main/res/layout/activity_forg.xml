@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".forg"
+    android:background="@drawable/backgroundcolor">
+
+    <EditText
+        android:layout_centerInParent="true"
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:layout_margin="8dp"
+        android:ems="10"
+        android:hint="@string/email_id"
+        android:inputType="textEmailAddress"
+        />
+
+    <Button
+        android:layout_below="@+id/email"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/reset"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="@string/reset"
+        android:textColor="@color/btntext"
+        android:background="@drawable/rounded_button"
+        />
+</RelativeLayout>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "798527357815",
+    "firebase_url": "https://eprescription-1790b.firebaseio.com",
+    "project_id": "eprescription-1790b",
+    "storage_bucket": "eprescription-1790b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:798527357815:android:7a1423abde3f34fc07d772",
+        "android_client_info": {
+          "package_name": "com.e_prescription"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "798527357815-b7m38ksklkphhgu0gtn7sdrn4hukjid3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.e_prescription",
+            "certificate_hash": "5af8e0ac6e9cc5c0687fc645e828916902f32a56"
+          }
+        },
+        {
+          "client_id": "798527357815-05ujdko6db15mc3c29clo9r3cnhi4ggh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCpSSBkpIuumRqpHny_g2Q60Hn6vXVqR2g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "798527357815-05ujdko6db15mc3c29clo9r3cnhi4ggh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

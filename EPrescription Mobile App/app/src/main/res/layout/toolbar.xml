@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rounded_button"
+    android:layout_margin="5dp"
+    app:title="E-Prescription"
+    android:layout_marginLeft="10dp"
+    app:titleTextColor="@color/btntext"
+    android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+    android:elevation="4dp">
+
+</androidx.appcompat.widget.Toolbar>

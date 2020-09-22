@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#F44336</color>
+    <color name="white">#fafafa</color>
+    <color name="pink">#EA5588</color>
+    <color name="white_pressed">#f1f1f1</color>
+    <color name="pink_pressed">#3F51B5</color>
+    <color name="textcolor">#000000</color>
+    <color name="btncolor">#F44336</color>
+    <color name="btntext">#ffffff</color>
+    <color name="roundcolor">#F3F3F3</color>
+    <color name="black">#2C2B2B</color>
+    <color name="list">#E389A7</color>
+</resources>
